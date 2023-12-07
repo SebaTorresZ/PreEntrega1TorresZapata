@@ -1,4 +1,3 @@
-// src/ProductCatalog.js
 import React from 'react';
 import ProductCard from './ProductCard';
 
