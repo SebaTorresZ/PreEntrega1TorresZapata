@@ -8,8 +8,8 @@ const ProductCard = ({ product }) => {
         <div className="card mb-4">
             <div className="card-body">
                 <h5 className="card-title">{name}</h5>
-                <p className="card-text">Category: {category}</p>
-                <p className="card-text">Price: ${price}</p>
+                <p className="card-text">Categoría: {category}</p>
+                <p className="card-text">Precio: ${price}</p>
                 <Link to={`/detalle/${category.toLowerCase()}/${id}`} className="btn btn-primary">
                     Ver Detalles
                 </Link>
