@@ -11,13 +11,14 @@ const App = () => {
     <Router>
       <div>
         <NavBar />
+        <ItemListContainer greeting="Bienvenido a nuestra tienda de ropa" />
         <Routes>
-          <Route path="/hombre" element={<ItemListContainer greeting="Bienvenido a la sección de hombres" />} />
-          <Route path="/mujer" element={<ItemListContainer greeting="Bienvenido a la sección de mujeres" />} />
-          <Route path="/ninos" element={<ItemListContainer greeting="Bienvenido a la sección de niños" />} />
-          <Route path="/" element={<ItemListContainer greeting="Bienvenido a nuestra tienda de ropa" />} />
+          <Route path="/hombre" element={<ProductCatalog category="Hombre" />} />
+          <Route path="/mujer" element={<ProductCatalog category="Mujer" />} />
+          <Route path="/ninos" element={<ProductCatalog category="Niños" />} />
+          <Route path="/" element={<ProductCatalog />} />
         </Routes>
-        <ProductCatalog />
+        
       </div>
     </Router>
   );
